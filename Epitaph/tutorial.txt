@@ -1,0 +1,30 @@
+EPITAPH : 
+
+How To Play:
+I. Features On Card:
+    1. Red --> Attack power
+    2. Blue --> Mana Cost
+    3. Green --> Health points
+
+II. Features of the Game:
+    1. Mana Bar(on left)--> Indicates mana of the player
+    2. Points Bar(on right)--> The points bar showcases how close a player is to winning,
+                               more red means the closer you are to winning,
+                               more blue means the closer you are to losing.
+    3. Mana Button--> Click to increase your mana, which is then used to play the cards(only usable once per turn) 
+    4. Draw Button--> Click to draw a card onto your hand when you can hold more cards(only usable once per turn)
+    5. Pass Button--> Click to end your turn, your turn only ends when you want it to.
+                      The turn can have any amount of actions taking place, except for either a single mana or card draw.
+                      You can play as many cards as you want to, as long as you have the mana or cards to do so.
+
+III. General Rules of Epitaph:
+    1. Game starts with 4 cards, 60 mana and the points bar set to the middle.
+    2. Either Mana and Draw buttons can only be used once per round.
+    3. When a card attacks, it can either attack an empty slot or another card directly in front of it.
+    4. When a card attacks an empty slot, it moves the points bar in your favor and vice versa.
+    5. Each card has a specific amount of mana required to play it, and that amount is used up as you play the card.
+    6. To play a card, you need to click on the card and click on an empty slot of your choice and the card will move.
+    7. The card can also be played by picking the empty slot where you want to card to be played, followed by the card itself. 
+    8. When you pass your turn, the opposing cards will attack first followed by your cards.
+    9. The health of a card reduces by the amount of attack power on the directy opposing card.
+    10. The game will end when the points bar is fully in the favor of the opposition or you.
