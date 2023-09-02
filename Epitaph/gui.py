@@ -12,7 +12,7 @@ def g():
         file=open('tutorial.txt')
         s=file.read()
         n=Tk(className='Tutorial')
-        Label(n,text=s,justify='left').pack(anchor='w')
+        Label(n,text=s,justify='left',bg='#998675',font=('Epitaph',13)).pack(anchor='w')
         n.mainloop()
     def death():
         global Running
@@ -62,20 +62,20 @@ def g():
             l=Label(master,height=500,width=500)
             l.place(x=0,y=0)
             l=Label(master,text='YOU LOSE!!',font=('Epitaph',35))
-            l.place(x=550,y=300)
-            b6=Button(master,text='EXIT',height=3,width=20,command=death)
+            l.place(x=590,y=300)
+            b6=Button(master,text='EXIT',height=3,width=20,font=('Epitaph',15),command=death)
             b6.place(x=600,y=370)
-            r=Button(master,text='RESTART',height=3,width=20,command=restart)
+            r=Button(master,text='RESTART',height=3,width=20,font=('Epitaph',15),command=restart)
             r.place(x=600,y=450)
             
         elif point<=0:
             l=Label(master,height=500,width=500)
             l.place(x=0,y=0)
             l=Label(master,text='YOU WIN!!',font=('Epitaph',35))
-            l.place(x=550,y=300)
-            b6=Button(master,text='EXIT',height=3,width=20,command=death)
+            l.place(x=590,y=300)
+            b6=Button(master,text='EXIT',height=3,width=20,font=('Epitaph',15),command=death)
             b6.place(x=600,y=370)
-            r=Button(master,text='RESTART',height=3,width=20,command=restart)
+            r=Button(master,text='RESTART',height=3,width=20,font=('Epitaph',15),command=restart)
             r.place(x=600,y=450)
             
         
@@ -419,15 +419,15 @@ def g():
     master.title('Epitaph')
     w = Canvas(master, width=1366, height=704)
     w.pack()
-
     blank_img=PhotoImage(file='blank.png',width=125,height=192)
+    master.iconbitmap('logo.ico')
     drawcard = PhotoImage(file='drawcard.png')
     manadraw= PhotoImage(file='mana.png')
-    b1 = Button(master,bg='BLUE',activebackground='LIGHTSKYBLUE1',image=manadraw,command=mana)
+    b1 = Button(master,bg='BLUE',activebackground='LIGHTSKYBLUE1',font=('Epitaph',11),image=manadraw,command=mana)
     b1.place(x=50,y=595)
-    b2 = Button(master,bg='RED',activebackground='BROWN',image=drawcard,command=draw)
+    b2 = Button(master,bg='BROWN',activebackground='BROWN',font=('Epitaph',11),image=drawcard,command=draw)
     b2.place(x=1250,y=595)
-    b3=Button(master,bg='PINK',width=5,height=3,text='PASS',command=pass_)
+    b3=Button(master,bg='PINK',width=5,height=3,text='PASS',font=('Epitaph',11),command=pass_)
     b3.place(x=1250,y=300)
 
     c1 = Button(master,image=blank_img,width=125,height=192,command=card1)
@@ -495,8 +495,8 @@ def g():
     bar.place(x=50,y=45)
     cap=Label(master,width=5,height=0,bg='BLACK')
     cap.place(x=50,y=45)
-    mc=Label(master,width=5)
-    mc.place(x=50,y=400)
+    mc=Label(master,width=2,font=('Epitaph',15),foreground='BLUE')
+    mc.place(x=55,y=380)
 
     cap=Label(master,width=6,height=23,bg='BLACK')
     cap.place(x=1146,y=40)
@@ -510,11 +510,11 @@ def g():
     strt=PhotoImage(file='bg.png',height=1000,width=10000)
     l=Label(master,image=strt)
     l.place(x=-300,y=0)
-    start=Button(master,height=3,width=20,text='START',command=startgame)
+    start=Button(master,height=3,width=20,text='START',font=('Epitaph',15),command=startgame)
     start.place(x=600,y=300)
     
-    tut=Button(master,height=3,width=20,text='TUTORIAL',command=tutorial)
-    tut.place(x=600,y=350)
+    tut=Button(master,height=3,width=20,text='TUTORIAL',font=('Epitaph',15),command=tutorial)
+    tut.place(x=600,y=400)
     master.mainloop()
 
     
