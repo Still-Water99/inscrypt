@@ -20,7 +20,7 @@ def g():
         n.mainloop()
         file.close()
     def highscores():
-        ma=ms.connect(host='localhost',user='root',passwd='areen',database='epitaph')
+        ma=ms.connect(host='localhost',user='root',passwd='PASSWORD HERE',database='epitaph')
         mc=ma.cursor()
         mc.execute("Select * from highscore order by score")
         mfm=mc.fetchmany(10)
@@ -102,7 +102,7 @@ def g():
             r=Button(master,text='RESTART',height=3,width=20,font=('Epithet',15),command=restart)
             r.place(x=600,y=450)
             if user !='':
-                ma=ms.connect(host='localhost',user='root',passwd='areen',database='epitaph')
+                ma=ms.connect(host='localhost',user='root',passwd='PASSWORD HERE',database='epitaph')
                 mc=ma.cursor()
                 qur="insert into lowscore(Name,Score) values('"+str(user)+"',"+str(ps+5)+");"
                 mc.execute(qur)
@@ -122,7 +122,7 @@ def g():
             l=Label(master,text='Your Score is: '+str(ps),height=3,width=20,font=('Epitaph',15))
             l.place(x=590,y=530)
             if user !='':
-                ma=ms.connect(host='localhost',user='root',passwd='areen',database='epitaph')
+                ma=ms.connect(host='localhost',user='root',passwd='PASSWORD HERE',database='epitaph')
                 mc=ma.cursor()
                 quer="insert into highscore(Name,Score) values('"+str(user)+"',"+str(ps)+");"
                 mc.execute(quer)
